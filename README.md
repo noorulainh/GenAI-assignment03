@@ -102,21 +102,7 @@ pip install -r requirements.txt
 
 ### Step 5: Set API Key (IMPORTANT)
 
-Create an environment variable for your Generative AI API key.
-
-**Windows (PowerShell)**
-
-```bash
-setx GOOGLE_API_KEY "your_api_key_here"
-```
-
-**Linux / macOS**
-
-```bash
-export GOOGLE_API_KEY="your_api_key_here"
-```
-
-Restart the terminal after setting the environment variable.
+Paste your API Key.
 
 ---
 

@@ -1,4 +1,5 @@
 GenAI Security Helper
+Overview
 
 GenAI Security Helper is a web-based application designed to analyze source code snippets and provide security feedback using Generative AI. The system helps developers identify vulnerabilities, understand potential risks, and receive suggestions for improving code security.
 
@@ -21,21 +22,21 @@ The backend communicates with a Generative AI model to analyze the submitted cod
 Repository Structure
 assign3/
 │
-├── backend/                # Python Backend (API Service)
-│   ├── main.py             # Main server file
-│   ├── requirements.txt    # Python dependencies
+├── backend/                 # Python Backend (API Service)
+│   ├── main.py              # Main server file
+│   ├── requirements.txt     # Python dependencies
 │
-├── frontend/               # React Frontend Application
+├── frontend/                # React Frontend Application
 │
-├── .gitignore              # Git ignored files configuration
-└── README.md               # Project documentation
+├── .gitignore               # Git ignored files configuration
+└── README.md                # Project documentation
 
 Technology Stack
 Backend
 
 Python
 
-FastAPI / Flask (depending on your implementation)
+FastAPI / Flask
 
 Uvicorn (ASGI server)
 
@@ -70,12 +71,12 @@ python -m venv venv
 
 Step 3: Activate Virtual Environment
 
-Windows:
+Windows
 
 venv\Scripts\activate
 
 
-Linux/macOS:
+Linux / macOS
 
 source venv/bin/activate
 
@@ -84,22 +85,21 @@ pip install -r requirements.txt
 
 Step 5: Set API Key (IMPORTANT)
 
-Create an environment variable for your Generative AI API key:
+Create an environment variable for your Generative AI API key.
 
-Windows (PowerShell):
+Windows (PowerShell)
 
 setx GOOGLE_API_KEY "your_api_key_here"
 
 
-Linux/macOS:
+Linux / macOS
 
 export GOOGLE_API_KEY="your_api_key_here"
 
 
-Restart terminal after setting environment variable.
+Restart the terminal after setting the environment variable.
 
 Step 6: Run Backend Server
-
 uvicorn main:app --reload
 
 
@@ -107,6 +107,10 @@ Backend will run at:
 
 http://127.0.0.1:8000
 
+
+Swagger Documentation:
+
+http://127.0.0.1:8000/docs
 
 Frontend Setup Instructions
 Step 1: Navigate to Frontend Directory
@@ -152,7 +156,6 @@ RESTful API design
 
 Git Configuration Notes
 
-.gitignore is located in the project root.
+.gitignore is located in the project root
 
-venv/ and node_modules/ are excluded from version control.
-
+venv/ and node_modules/ are excluded from version control
